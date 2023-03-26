@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 export const NavBar = () => {
 
@@ -26,7 +25,7 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
-
+  
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -43,12 +42,17 @@ export const NavBar = () => {
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
-              <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
+            <div>
+              <a href="https://github.com/sandrab4" target="_blank" rel="noopener noreferrer">
+                <FaGithub size="2em" />
+                </a>
+                <a href="https://mail.google.com/mail?view=cm&fs=1&to=barrongsandra@gmail.com&su=Draft" target="_blank" rel="noopener noreferrer">
+                  <FaEnvelope size="2em" />
+                  </a>
+                  <a href="https://linkedin.com/in/sandra-b-5868961b8" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin size="2em" />
+                    </a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>
