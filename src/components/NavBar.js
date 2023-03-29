@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
-
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
