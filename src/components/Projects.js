@@ -50,7 +50,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Here is some of my past work. Each project has been a unique challenge and an opportunity to work closely with clients to bring their vision to life. From e-commerce platforms to landing pages and personal blogs, each project has allowed me to push my creativity and skills to the limit.</p>
+                <p>Here is some of my past work. Each project has been a unique challenge and an opportunity to work closely with clients to bring their vision to life.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
