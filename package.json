@@ -1,5 +1,5 @@
 {
-  "name": "personal-portfolio",
+  "name": "website",
   "homepage": "https://sandrab4.github.io/website",
   "version": "0.1.0",
   "private": true,
@@ -32,7 +32,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
