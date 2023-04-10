@@ -13,7 +13,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1>{`Sandra Barron `} <br></br></h1>
-                  <p>Web Developer</p>
+                  <p>Web Develope</p>
               </div>}
             </TrackVisibility>
           </Col>
