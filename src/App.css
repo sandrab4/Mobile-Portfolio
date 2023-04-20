@@ -89,13 +89,55 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #7b7979 !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
-  font-size: 18px;
+  padding: 0 25px 0 15px;
+  font-size: 17px;
   opacity: 0.75;
+  margin-top: -15px;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 2;
+nav.navbar .navbar-nav a.nav-link.navbar-link {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  color: #7b7979 !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px 0 15px;
+  font-size: 17px;
+  opacity: 0.75;
+  margin-top: -15px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
+  opacity: 1;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border: 2px solid #7b7979;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  z-index: -2;
+  transition: all 0.3s ease-in-out;
 }
 span.navbar-text {
     display: flex;
@@ -169,67 +211,26 @@ nav.navbar .navbar-nav {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 200px 0 100px 0;
+  padding: 150px 10px 150px 0;
   background-color: #efeee8;
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.banner .tagline {
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 15px;
-  margin-bottom: 16px;
-  display: inline-block;
 }
 .banner h1 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 43px;
+  font-weight: 350;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
-  display: block;
 }
 .banner p {
   color: #7b7979;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1em;
-  width: 96%;
-}
-.banner button {
-  color: black;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-}
-.banner button:hover svg {
-  margin-left: 25px;
 }
 .banner img {
-  animation: updown 2s linear infinite;
+  width: 90%;
+  height: 90%;
+  scale: 1.5;
 }
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-}
-
 /************ Skills Css ************/
 .skill {
   padding: 150px 0 50px 0;
@@ -254,7 +255,6 @@ nav.navbar .navbar-nav {
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
-
 /************ Projects Css ************/
 .projects {
   padding: 150px 0;

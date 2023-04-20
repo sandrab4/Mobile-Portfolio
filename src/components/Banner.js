@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import picbg from "../assets/img/picbg.jpg";
-import 'animate.css';
+import picbg from "../assets/img/picbg.png";
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -11,8 +10,8 @@ export const Banner = () => {
           <Col xs={11} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1>{`Sandra Barron `} <br></br></h1>
+              <div>
+                <h1>{`Sandra Barron`} <br></br></h1>
                   <p>Web Developer</p>
               </div>}
             </TrackVisibility>
@@ -20,7 +19,7 @@ export const Banner = () => {
           <Col xs={11} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div>
                   <img src={picbg} alt="picbg"/>
                 </div>}
             </TrackVisibility>
