@@ -305,7 +305,7 @@ nav.navbar .navbar-nav {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 .proj-imgbx::before {
   content: "";
