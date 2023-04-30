@@ -3,7 +3,7 @@ import React from 'react';
 const Projects: React.FC = () => {
   return (
     <div style={{textAlign: 'center', color: 'black'}}>
-      <h2 style={{fontSize: '2rem'}}>Skills</h2>
+      <h2 style={{fontSize: '2rem'}}>Projects</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ante libero,
         in faucibus nisi bibendum non. Donec euismod leo vel elit dapibus congue.

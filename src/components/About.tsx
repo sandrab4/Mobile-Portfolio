@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <div style={{textAlign: 'center', color: 'black'}}>
+    <div style={{textAlign: 'center', color: 'black', marginBottom: '10%'}}>
       <h2 style={{fontSize: '2rem'}}>About</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ante libero,
