@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar';
 import Home from '@/components/Home';
-import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
@@ -13,7 +12,6 @@ export default function MyHomePage() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 mt-10 py-15">
       <Navbar />
       <Home />
-      <About />
       <Skills />
       <Projects />
       <Contact />
