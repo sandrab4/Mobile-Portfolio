@@ -1,34 +1,24 @@
-import Link from "next/link";
-import React from "react";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import React from 'react';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 w-screen h-14 bg-black">
       <ul className="flex justify-end items-center pt-5">
-        <li className="mr-12 text-white uppercase hover:text-gray-500">
-          <ScrollLink to="home" smooth={true} duration={500}>
-            Home
-          </ScrollLink>
+        <li id="navbar-home" className="flex-shrink px-5">
+          <a href="/" id="home">Home</a>
         </li>
-        <li className="mr-12 text-white uppercase hover:text-gray-500">
-          <ScrollLink to="skills" smooth={true} duration={500}>
-            Skills
-          </ScrollLink>
+        <li id="navbar-experience" className="flex-shrink px-5">
+          <a href="/" id="experience">Skills</a>
         </li>
-        <li className="mr-12 text-white uppercase hover:text-gray-500">
-          <ScrollLink to="projects" smooth={true} duration={500}>
-            Projects
-          </ScrollLink>
+        <li id="navbar-projects" className="flex-shrink px-5">
+          <a href="/" id="projects">Projects</a>
         </li>
-        <li className="mr-12 text-white uppercase hover:text-gray-500">
-          <ScrollLink to="contact" smooth={true} duration={500}>
-            Contact
-          </ScrollLink>
+        <li id="navbar-contact" className="flex-shrink px-5">
+          <a href="/" id="contact">Contact</a>
         </li>
       </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;
