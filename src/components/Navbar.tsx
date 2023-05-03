@@ -1,24 +1,87 @@
-import React from 'react';
+"use client"
+import React from "react"
+import { useState } from "react"
+import { Link } from "react-scroll/modules"
+import { usePathname } from "next/navigation"
+import { IoMdMenu, IoMdClose } from "react-icons/io"
 
-const Navbar: React.FC = () => {
-  return (
-    <nav className="fixed top-0 w-screen h-14 bg-black">
-      <ul className="flex justify-end items-center pt-5">
-        <li id="navbar-home" className="flex-shrink px-5">
-          <a href="/" id="home">Home</a>
-        </li>
-        <li id="navbar-experience" className="flex-shrink px-5">
-          <a href="/" id="experience">Skills</a>
-        </li>
-        <li id="navbar-projects" className="flex-shrink px-5">
-          <a href="/" id="projects">Projects</a>
-        </li>
-        <li id="navbar-contact" className="flex-shrink px-5">
-          <a href="/" id="contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  );
+interface NavItem {
+  label: string
+  page: string
 }
 
-export default Navbar;
+const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: "Home",
+    page: "home",
+  },
+  {
+    label: "Skills",
+    page: "skills",
+  },
+  {
+    label: "Projects",
+    page: "projects",
+  },
+  {
+    label: "Contact",
+    page: "contact",
+  },
+]
+
+export default function Navbar() {
+  const pathname = usePathname()
+  const [navbar, setNavbar] = useState(false)
+  return (
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-black">
+      <div className="justify-between md:items-center md:flex">
+        <div>
+          <div className="flex items-center justify-between py-0 md:py-8 md:block">
+            <Link to="home">
+              <div className="container flex items-center">
+              </div>
+            </Link>
+            <div className="md:hidden">
+              <button
+                className=" text-white rounded-md outline-none focus:border-gray-400 focus:border"
+                onClick={() => setNavbar(!navbar)}
+              >
+                {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            className={`flex-1 pb-1 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
+          >
+            <div className="items-center md:flex md:flex-row md:space-x-6">
+              {NAV_ITEMS.map((item, idx) => {
+                return (
+                  <Link
+                    key={idx}
+                    to={item.page}
+                    className={
+                      "lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 inline-flex mr-10"
+                    }
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  )
+}
