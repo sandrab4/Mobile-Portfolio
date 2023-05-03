@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react"
 
-const Skills: React.FC = () => {
+const Skills = () => {
   return (
-    <div style={{textAlign: 'center', color: 'black', marginBottom: '50%'}}>
-      <h2 style={{fontSize: '2rem'}}>Skills</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ante libero,
-        in faucibus nisi bibendum non. Donec euismod leo vel elit dapibus congue.
-        Praesent sit amet enim et lorem elementum bibendum eget in ex. Vivamus suscipit mi id nulla vestibulum,
-        quis congue lorem tincidunt. Aliquam quis enim at arcu hendrerit bibendum. Sed sed dolor ac massa tempor hendrerit.
-      </p>
-    </div>
-  );
-};
+    <section id="skills">
+      <div className="my-12 pb-12 md:pt-16 md:pb-48">
+        <h1 className="text-center font-bold text-4xl text-black">
+          Skills
+        </h1>
+          </div>
+    </section>
+  )
+}
 
 export default Skills;
