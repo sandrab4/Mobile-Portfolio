@@ -36,7 +36,7 @@ export default function Navbar() {
     <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-black">
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between py-0 md:py-8 md:block">
+          <div className="flex items-center justify-end py-0 md:py-8 md:block">
             <Link to="home">
               <div className="container flex items-center">
               </div>
@@ -65,7 +65,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 inline-flex mr-10"
+                      "lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 inline-flex px-7 md:px-3"
                     }
                     activeClass="active"
                     spy={true}

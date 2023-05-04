@@ -15,6 +15,7 @@ const Home = () => {
             width={300}
             height={325}
             className="rounded-full shadow-2xl"
+            priority
           />
         </div>
         <div className="md:mt-1 md:w-3/5">
