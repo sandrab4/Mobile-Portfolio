@@ -34,9 +34,9 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(false)
   return (
     <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-black">
-      <div className="justify-between md:items-center md:flex">
+      <div className="justify-between md:items-center md:flex my-0 md:py-5">
         <div>
-          <div className="flex items-center justify-end py-0 md:py-8 md:block">
+          <div className="flex justify-end">
             <Link to="home">
               <div className="container flex items-center">
               </div>
@@ -65,7 +65,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 inline-flex px-7 md:px-3"
+                      "lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 px-7 md:px-3"
                     }
                     activeClass="active"
                     spy={true}
