@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef, ReactNode } from "react"
+import React, { useEffect, useRef, ReactNode, useState } from "react"
 
 interface Props {
   offset?: string
@@ -8,14 +8,14 @@ interface Props {
 
 export default function SlideUp({ children, offset = "0px" }: Props) {
   const ref = useRef(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0")
-            entry.target.classList.add("animate-slideUpCubiBezier")
+            setIsVisible(true)
           }
         })
       },
@@ -28,7 +28,7 @@ export default function SlideUp({ children, offset = "0px" }: Props) {
   }, [ref, offset])
 
   return (
-    <div ref={ref} className="relative opacity-1">
+    <div ref={ref} className={`relative ${isVisible ? 'opacity-100 transform translate-y-0 transition-all duration-500 ease-out' : 'opacity-0 transform translate-y-5'}`}>
       {children}
     </div>
   )
