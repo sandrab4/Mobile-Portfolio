@@ -6,22 +6,22 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Coming Soon",
+    name: "Misplaced",
     description:
       "Coming Soon",
     image: "/coming.png",
     github: "",
-    link: "",
+    link: "https://misplaced.app",
   },
   {
-    name: "Coming Soon",
+    name: "Task App",
     description: "This is a to do list app that I built using the REACT.",
     image: "/coming.png",
     github: "",
     link: "",
   },
   {
-    name: "Coming Soon",
+    name: "Cat Island Game",
     description:
       "Comin Soon",
     image: "/coming.png",
