@@ -74,18 +74,8 @@ export default function Navbar() {
           <div
             id="fontSize"
             className={`flex flex-shrink items-center md:block ${
-              navbar ? "block" : "hidden"
-            }`}
+              navbar ? "block" : "hidden"}`}
           >
-            <style>
-              {`
-            @media (min-width:640px){
-              #fontSize{
-                font-size:1em:
-              } 
-            }
-            `}
-            </style>
             <div className="flex items-center flex-row">
               {NAV_ITEMS.map((item, idx) => {
                 return (
@@ -93,7 +83,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 px-5 md:px-3"
+                      "inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 px-3 md:px-3"
                     }
                     activeClass="active"
                     spy={true}

@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "Task App",
-    description: "This is a to do list app that I built using the REACT.",
+    description: "This is a to do list app that I built using REACT.",
     image: "/coming.png",
     github: "",
     link: "",
