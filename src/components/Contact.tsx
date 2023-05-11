@@ -9,7 +9,7 @@ const Contact = () => {
       </h1>
       <div className="flex justify-center pt-20">
         <a href="https://mail.google.com/mail?view=cm&fs=1&to=barrongsandra@gmail.com&su=Draft" target="_blank">
-          <AiOutlineMail className="w-16 h-16 text-black hover:text-white duration-300 hover:-translate-y-1 transition-transform cursor-pointer" />
+          <AiOutlineMail className="w-16 h-16 text-black hover:text-blue-600 duration-300 hover:-translate-y-1 transition-transform cursor-pointer" />
         </a>
         <a
           href="https://www.linkedin.com/in/sandrabarron4/"
@@ -17,7 +17,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="mx-14 hover:-translate-y-1 transition-transform cursor-pointer"
         >
-          <AiOutlineLinkedin className="w-16 h-16 text-black hover:text-white transition-all duration-300"/>
+          <AiOutlineLinkedin className="w-16 h-16 text-black hover:text-blue-600 transition-all duration-300"/>
         </a>
         <a
           href="https://github.com/sandrab4"

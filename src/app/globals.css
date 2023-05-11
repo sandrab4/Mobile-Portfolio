@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('/star.png') cursor, pointer;
+
+.custom-cursor {
+  cursor: url(/star.png), pointer;
+}
 
 :root {
   --foreground-rgb: 255, 255, 255;
