@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import ParallaxComponent from '@/components/Parallax';
 import Home from '@/components/Home';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
