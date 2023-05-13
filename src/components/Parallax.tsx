@@ -1,25 +1,44 @@
 "use client";
 import left from "./public/left.png";
 import right from "./public/right.png";
+import { useEffect, useRef } from 'react';
+import { useWindowScroll } from 'react-use';
 
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+const ParallaxComponent = () => {
+  const { y } = useWindowScroll();
+  const parallaxRef = useRef<HTMLImageElement>(null); 
 
-function ParallaxComponent() {
+  useEffect(() => {
+    const parallax = parallaxRef.current;
+
+    const parallaxEffect = () => {
+      if (parallax) {
+        parallax.style.transform = `translateY(${y * 0.5}px)`;
+      }
+    };
+
+    window.addEventListener('scroll', parallaxEffect);
+    return () => {
+      window.removeEventListener('scroll', parallaxEffect);
+    };
+  }, [y]);
+
   return (
-    <div>
-      <Parallax pages={2}>
-        <ParallaxLayer offset={0} speed={0.5}>
-          <div style={{ width: "65%", height: "100%", position: "absolute"}}>
-            <img src="left.png" alt="Left image" style={{ width: "100%", height: "auto"}} />
-          </div>
-          <div style={{ width: "65%", height: "100%", position: "absolute", right: 269 }}>
-            <img src="right.png" alt="Right image" style={{ width: "100%", height: "auto" }} />
-          </div>
-        </ParallaxLayer>
-
-      </Parallax>
+    <div className="relative">
+      <div ref={parallaxRef} className="absolute top-0 left-0 w-full h-full">
+        <img
+          className="absolute top-0 left-0 w-full h-auto"
+          src="left.png"
+          alt="Cherry Blossom Branch 1"
+        />
+        <img
+          className="relative w-full h-auto"
+          src="right.png"
+          alt="Cherry Blossom Branch 2"
+        />
+      </div>
     </div>
   );
-}
+};
 
 export default ParallaxComponent;
