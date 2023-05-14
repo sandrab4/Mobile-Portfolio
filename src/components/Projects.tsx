@@ -8,15 +8,15 @@ const projects = [
   {
     name: "Misplaced",
     description:
-      "Coming Soon",
-    image: "/coming.png",
+      "Misplaced is a digitalized lost and found platform for TU students to retrieve lost items by posting information through an intuitive React Native UI and connecting with potential finders. Utilizes MERN stack and Google Cloud APIs.",
+    video: "/misplacedDemo.mp4",
     github: "https://github.com/misplaced-dev/misplaced",
     link: "https://misplaced.app",
   },
   {
     name: "Task App",
-    description: "This is a to do list app that I built using REACT.",
-    image: "/coming.png",
+    description: "This is a to do list app that I built using React Native.",
+    video: "/coming.png",
     github: "",
     link: "",
   },
@@ -24,7 +24,7 @@ const projects = [
     name: "Cat Island Game",
     description:
       "Comin Soon",
-    image: "/coming.png",
+    video: "/coming.png",
     github: "",
     link: "",
   },
@@ -45,9 +45,8 @@ const Projects = () => {
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
                     <Link href={project.link} target="_blank">
-                      <Image
-                        src={project.image}
-                        alt=""
+                      <video
+                        src={project.video}
                         width={1000}
                         height={1000}
                         className="rounded-xl shadow-xl hover:opacity-70"
