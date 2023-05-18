@@ -7,6 +7,7 @@ const Skills = () => {
         <h1 className="text-center font-bold text-4xl text-black">
           Skills
         </h1>
+        <h1 className="text-black">Icons</h1>
           </div>
     </section>
   )
