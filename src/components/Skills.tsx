@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
             <p>JavaScript</p>
           </div>
         </div>
-        <p>SMALLICONS git, expo, figma, tailwind css, html, css blender, xcode</p>
+        <p>SMALL ICONS git, expo, figma, tailwind css, html, css blender, xcode</p>
       </div>
     </section>
   );
