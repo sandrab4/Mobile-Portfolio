@@ -10,24 +10,24 @@ const Skills: React.FC = () => {
     <section id="skills">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center font-bold text-4xl text-black">Skills</h1>
-        <div className="flex justify-center space-x-4 flex-wrap"> {/* Added flex-wrap class */}
-          <div className="text-center">
+        <div className="flex justify-center space-x-4 flex-wrap">
+          <div className="text-center text-black">
             <img src="reactIcon.png" alt="React Icon" style={{ width: "100px", height: "90px" }} />
             <p>React</p>
           </div>
-          <div className="text-center">
+          <div className="text-center text-black">
             <img src="nextjsIcon.png" alt="Nextjs Icon" style={{ width: "90px", height: "90px" }} />
             <p>Next.js</p>
           </div>
-          <div className="text-center">
+          <div className="text-center text-black">
             <img src="nodejsIcon.png" alt="Nodejs Icon" style={{ width: "110px", height: "90px" }} />
             <p>Node.js</p>
           </div>
-          <div className="text-center">
+          <div className="text-center text-black">
             <img src="typescriptIcon.png" alt="Typescript Icon" style={{ width: "90px", height: "90px" }} />
             <p>TypeScript</p>
           </div>
-          <div className="text-center">
+          <div className="text-center text-black">
             <img src="javascriptIcon.png" alt="Javascript Icon" style={{ width: "100px", height: "100px" }} />
             <p>JavaScript</p>
           </div>
