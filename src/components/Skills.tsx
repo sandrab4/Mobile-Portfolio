@@ -16,19 +16,19 @@ const Skills: React.FC = () => {
             <p>React</p>
           </div>
           <div className="text-center text-black">
-            <img src="nextjsIcon.png" alt="Nextjs Icon" style={{ width: "90px", height: "90px" }} />
+            <img src="nextjsIcon.png" alt="Nextjs Icon" style={{ width: "100px", height: "90px" }} />
             <p>Next.js</p>
           </div>
           <div className="text-center text-black">
-            <img src="nodejsIcon.png" alt="Nodejs Icon" style={{ width: "110px", height: "90px" }} />
+            <img src="nodejsIcon.png" alt="Nodejs Icon" style={{ width: "100px", height: "90px" }} />
             <p>Node.js</p>
           </div>
           <div className="text-center text-black">
-            <img src="typescriptIcon.png" alt="Typescript Icon" style={{ width: "90px", height: "90px" }} />
+            <img src="typescriptIcon.png" alt="Typescript Icon" style={{ width: "100px", height: "90px" }} />
             <p>TypeScript</p>
           </div>
           <div className="text-center text-black">
-            <img src="javascriptIcon.png" alt="Javascript Icon" style={{ width: "100px", height: "100px" }} />
+            <img src="javascriptIcon.png" alt="Javascript Icon" style={{ width: "100px", height: "90px" }} />
             <p>JavaScript</p>
           </div>
         </div>
