@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
     <section id="skills">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center font-bold text-4xl text-black">Skills</h1>
-        <div className="flex justify-center space-x-4 flex-wrap">
+        <div className="flex justify-center space-x-12 md:space-x-20 flex-wrap">
           <div className="text-center text-black">
             <img src="reactIcon.png" alt="React Icon" style={{ width: "100px", height: "90px" }} />
             <p>React</p>
