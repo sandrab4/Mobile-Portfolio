@@ -33,6 +33,10 @@ const Skills: React.FC = () => {
           </div>
         </div>
         <p className="text-center text-black">SMALL ICONS git, expo, figma, tailwind css, html, css blender, xcode</p>
+        <div className="text-center text-black">
+            <img src="gitIcon.png" alt="Git Icon" style={{ width: "50px", height: "50px" }} />
+            <p>Git</p>
+          </div>
       </div>
     </section>
   );
