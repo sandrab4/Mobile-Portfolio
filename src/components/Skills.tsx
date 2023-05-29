@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
             <p>JavaScript</p>
           </div>
         </div>
-        <p>SMALL ICONS git, expo, figma, tailwind css, html, css blender, xcode</p>
+        <p className="text-center text-black">SMALL ICONS git, expo, figma, tailwind css, html, css blender, xcode</p>
       </div>
     </section>
   );
