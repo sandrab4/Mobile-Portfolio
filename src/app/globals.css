@@ -1,28 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('/star.png') cursor, pointer;
 
 .custom-cursor {
-  cursor: url(/star.png), pointer;
+  cursor: url('/star.png'), pointer;
 }
 
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 239, 238, 233;
-  --background-end-rgb:239, 238, 233;
+  --background-end-rgb: 239, 238, 233;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 239, 238, 233;
-    --background-end-rgb:255, 207, 213;
+    --background-end-rgb: 255, 207, 213;
   }
 }
 
 body {
-  cursor: url('/star.png') !important;
+  cursor: url('/star.png'), pointer;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
