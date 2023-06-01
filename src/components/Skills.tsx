@@ -1,29 +1,26 @@
 import React from "react";
-import reactIcon from "./reactIcon.png";
-import nextjsIcon from "./nextjsIcon.png";
-import nodejsIcon from "./nodejsIcon.png";
-import typescriptIcon from "./typescriptIcon.png";
-import javascriptIcon from "./javascriptIcon.png";
-import gitIcon from "./gitIcon.png";
-import expoIcon from "./expoIcon.png";
 
 const Skills: React.FC = () => {
   return (
     <section id="skills">
       <div className="my-12 pb-12 md:pt-16 md:pb-48 mb-80">
         <h1 className="text-center font-bold text-4xl text-black">Skills</h1>
-        <div className="flex justify-center space-x-10 md:space-x-20 flex-wrap">
+        <div className="flex justify-center md:space-x-10 flex-wrap mt-20">
           <div className="text-center text-black">
             <img src="reactIcon.png" alt="React Icon" style={{ width: "100px", height: "90px" }} />
             <p>React</p>
+          </div>
+          <div className="text-center text-black">
+            <img src="reactIcon.png" alt="React Icon" style={{ width: "100px", height: "90px" }} />
+            <p>React Native</p>
           </div>
           <div className="text-center text-black">
             <img src="nextjsIcon.png" alt="Next.js Icon" style={{ width: "100px", height: "90px" }} />
             <p>Next.js</p>
           </div>
           <div className="text-center text-black">
-            <img src="nodejsIcon.png" alt="Node.js Icon" style={{ width: "100px", height: "90px" }} />
-            <p>Node.js</p>
+            <img src="angularIcon.svg" alt="Angular Icon" style={{ width: "100px", height: "90px" }} />
+            <p>Angular</p>
           </div>
           <div className="text-center text-black">
             <img src="typescriptIcon.png" alt="TypeScript Icon" style={{ width: "100px", height: "90px" }} />
@@ -34,7 +31,11 @@ const Skills: React.FC = () => {
             <p>JavaScript</p>
           </div>
         </div>
-        <div className="flex justify-center space-x-10 md:space-x-20 mt-8">
+        <div className="flex justify-center space-x-5 md:space-x-10 mt-8">
+        <div className="text-center text-black">
+            <img src="nodejsIcon.png" alt="Node.js Icon" style={{ width: "50px", height: "50px" }} />
+            <p>Node.js</p>
+          </div>
           <div className="text-center text-black">
             <img src="gitIcon.png" alt="Git Icon" style={{ width: "50px", height: "50px" }} />
             <p>Git</p>
@@ -49,7 +50,7 @@ const Skills: React.FC = () => {
           </div>
           <div className="text-center text-black">
             <img src="tailwindcssIcon.png" alt="Tailwind Css Icon" style={{ width: "50px", height: "50px" }} />
-            <p>Tailwind Css</p>
+            <p>Tailwind</p>
           </div>
           <div className="text-center text-black">
             <img src="htmlIcon.png" alt="Html Icon" style={{ width: "50px", height: "50px" }} />
