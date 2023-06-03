@@ -5,30 +5,30 @@ const Skills: React.FC = () => {
     <section id="skills">
       <div className="my-12 pb-12 md:pt-16 md:pb-48 mb-80">
         <h1 className="text-center font-bold text-4xl text-black">Skills</h1>
-        <div className="flex justify-center md:space-x-10 flex-wrap mt-20">
+        <div className="flex justify-center items-center md:space-x-10 flex-wrap mt-20">
           <div className="text-center text-black">
-            <img src="reactIcon.png" alt="React Icon" style={{ width: "100px", height: "90px" }} />
-            <p>React</p>
+            <img src="reactIcon.png" alt="React Icon" style={{ width: "100%", height: "90px" }} />
+            <p className="mt-2">React</p>
           </div>
           <div className="text-center text-black">
-            <img src="reactIcon.png" alt="React Icon" style={{ width: "100px", height: "90px" }} />
-            <p>React Native</p>
+            <img src="reactIcon.png" alt="React Icon" style={{ width: "100%", height: "90px" }} />
+            <p className="mt-2">React Native</p>
           </div>
           <div className="text-center text-black">
-            <img src="nextjsIcon.png" alt="Next.js Icon" style={{ width: "100px", height: "90px" }} />
-            <p>Next.js</p>
+            <img src="nextjsIcon.png" alt="Next.js Icon" style={{ width: "100%", height: "90px" }} />
+            <p className="mt-2">Next.js</p>
           </div>
           <div className="text-center text-black">
-            <img src="angularIcon.svg" alt="Angular Icon" style={{ width: "100px", height: "90px" }} />
-            <p>Angular</p>
+            <img src="angularIcon.svg" alt="Angular Icon" style={{ width: "100%", height: "90px" }} />
+            <p className="mt-2">Angular</p>
           </div>
           <div className="text-center text-black">
-            <img src="typescriptIcon.png" alt="TypeScript Icon" style={{ width: "100px", height: "90px" }} />
-            <p>TypeScript</p>
+            <img src="typescriptIcon.png" alt="TypeScript Icon" style={{ width: "100%", height: "90px" }} />
+            <p className="mt-2">TypeScript</p>
           </div>
           <div className="text-center text-black">
-            <img src="javascriptIcon.png" alt="JavaScript Icon" style={{ width: "100px", height: "90px" }} />
-            <p>JavaScript</p>
+            <img src="javascriptIcon.png" alt="JavaScript Icon" style={{ width: "100%", height: "90px" }} />
+            <p className="mt-2">JavaScript</p>
           </div>
         </div>
         <div className="flex justify-center space-x-5 md:space-x-10 mt-8">
