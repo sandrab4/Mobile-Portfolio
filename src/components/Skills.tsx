@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
             <p className="mt-2">JavaScript</p>
           </div>
         </div>
-        <div className="flex justify-center space-x-5 md:space-x-11 mt-8">
+        <div className="flex justify-center space-x-6 md:space-x-11 mt-8">
         <div className="text-center text-black">
             <img src="nodejsIcon.png" alt="Node.js Icon" style={{ width: "60px", height: "50px" }} />
             <p>Node.js</p>
