@@ -1,6 +1,4 @@
 "use client";
-import left from "./public/left.png";
-import right from "./public/right.png";
 import { useEffect, useRef } from 'react';
 import { useWindowScroll } from 'react-use';
 

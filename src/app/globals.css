@@ -30,3 +30,11 @@ body {
     ),
     rgb(var(--background-start-rgb));
 }
+
+.skill-item {
+  transition: transform 0.2s;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
