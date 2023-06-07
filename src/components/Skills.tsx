@@ -65,7 +65,7 @@ const Skills: React.FC = () => {
             <p>Blender</p>
           </div>
           <div className="text-center text-black skill-item">
-            <img src="xcodeIcon.png" alt="Xcode Icon" style={{ width: "50px", height: "50px" }} />
+            <img src="xcodeIcon.png" alt="Xcode Icon" style={{ width: "50px", height: "51px" }} />
             <p>Xcode</p>
           </div>
         </div>
