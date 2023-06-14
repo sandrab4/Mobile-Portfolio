@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
             <p className="mt-2">JavaScript</p>
           </div>
         </div>
-        <div className="flex justify-center space-x-7 md:space-x-16 mt-10">
+        <div className="flex justify-center space-x-7 flex-wrap md:space-x-16 mt-10">
         <div className="text-center text-black skill-item">
             <img src="nodejsIcon.png" alt="Node.js Icon" style={{ width: "60px", height: "50px" }} />
             <p>Node.js</p>
@@ -45,7 +45,7 @@ const Skills: React.FC = () => {
             <p>Expo</p>
           </div>
           <div className="text-center text-black skill-item">
-            <img src="figmaIcon.png" alt="Figma Icon" style={{ width: "50px", height: "50px" }} />
+            <img src="figmaIcon.png" alt="Figma Icon" style={{ width: "45px", height: "50px" }} />
             <p>Figma</p>
           </div>
           <div className="text-center text-black skill-item">
@@ -57,12 +57,8 @@ const Skills: React.FC = () => {
             <p>Html</p>
           </div>
           <div className="text-center text-black skill-item">
-            <img src="cssIcon.png" alt="Css Icon" style={{ width: "50px", height: "50px" }} />
+            <img src="cssIcon.png" alt="Css Icon" style={{ width: "40px", height: "50px" }} />
             <p>Css</p>
-          </div>
-          <div className="text-center text-black skill-item">
-            <img src="blenderIcon.png" alt="Blender Icon" style={{ width: "50px", height: "50px" }} />
-            <p>Blender</p>
           </div>
           <div className="text-center text-black skill-item">
             <img src="xcodeIcon.png" alt="Xcode Icon" style={{ width: "50px", height: "50px" }} />
