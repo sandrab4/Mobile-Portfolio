@@ -24,8 +24,8 @@ const projects = [
     name: "Task App",
     description: "This is a to-do list app that I built using React Native.",
     video: "/taskAppDemo.mp4",
-    github: "",
-    link: "",
+    github: "https://github.com/sandrab4/TaskApp",
+    link: "https://task-app-sandrab4.vercel.app/",
   },
 ];
 
