@@ -59,10 +59,10 @@ const Projects = () => {
                     <h1 className="text-4xl font-bold mb-6 text-black">
                       {project.name}
                     </h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <p className="text-xl leading-7 mb-4 text-neutral-500 dark:text-neutral-400">
                       {project.description}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
+                    <div className="flex flex-row align-bottom space-x-4 text-black">
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
