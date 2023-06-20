@@ -83,7 +83,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 px-3 md:px-3"
+                      "inline-block hover:text-neutral-500 text-neutral-100 px-3 md:px-3"
                     }
                     activeClass="active"
                     spy={true}
