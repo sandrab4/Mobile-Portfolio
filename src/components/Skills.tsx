@@ -15,10 +15,6 @@ const Skills: React.FC = () => {
             <p className="mt-2">React Native</p>
           </div>
           <div className="text-center text-black skill-item">
-            <img src="nextjsIcon.png" alt="Next.js Icon" style={{ width: "100%", height: "90px" }} />
-            <p className="mt-2">Next.js</p>
-          </div>
-          <div className="text-center text-black skill-item">
             <img src="angularIcon.svg" alt="Angular Icon" style={{ width: "100%", height: "90px" }} />
             <p className="mt-2">Angular</p>
           </div>
@@ -30,8 +26,16 @@ const Skills: React.FC = () => {
             <img src="javascriptIcon.png" alt="JavaScript Icon" style={{ width: "100%", height: "90px" }} />
             <p className="mt-2">JavaScript</p>
           </div>
+          <div className="text-center text-black skill-item">
+            <img src="pythonIcon.png" alt="Python Icon" style={{ width: "100%", height: "90px" }} />
+            <p className="mt-2">Python</p>
+          </div>
         </div>
         <div className="flex justify-center space-x-7 flex-wrap md:space-x-16 mt-10">
+        <div className="text-center text-black skill-item">
+            <img src="nextjsIcon.png" alt="Next.js Icon" style={{ width: "45px", height: "43px" }} />
+            <p className="mt-2">Next.js</p>
+          </div>
         <div className="text-center text-black skill-item">
             <img src="nodejsIcon.png" alt="Node.js Icon" style={{ width: "60px", height: "50px" }} />
             <p>Node.js</p>
