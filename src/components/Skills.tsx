@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
         </div>
         <div className="flex justify-center space-x-7 flex-wrap md:space-x-16 mt-10">
         <div className="text-center text-black skill-item">
-            <img src="nextjsIcon.png" alt="Next.js Icon" style={{ width: "45px", height: "43px" }} />
+            <img src="nextjsIcon.png" alt="Next.js Icon" style={{ width: "45px", height: "42px" }} />
             <p className="mt-2">Next.js</p>
           </div>
         <div className="text-center text-black skill-item">
@@ -65,7 +65,7 @@ const Skills: React.FC = () => {
             <p>Css</p>
           </div>
           <div className="text-center text-black skill-item">
-            <img src="xcodeIcon.png" alt="Xcode Icon" style={{ width: "50px", height: "49px" }} />
+            <img src="xcodeIcon.png" alt="Xcode Icon" style={{ width: "50px", height: "50px" }} />
             <p>Xcode</p>
           </div>
         </div>

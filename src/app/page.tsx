@@ -1,6 +1,5 @@
-import ParallaxComponent from '@/components/Parallax';
 import Navbar from '@/components/Navbar';
-import Home from '@/components/Home';
+import Hero from '@/components/Hero';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
@@ -11,13 +10,13 @@ export const metadata: Metadata = {
   description: 'Portfolio By Sandra Barron',
 };
 
-export default function MyHomePage() {
+export default function Home() {
   return (
     <html>
       <body>
       <Navbar />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
-      <Home />
+      <Hero />
       <Skills />
       <Projects />
       <Contact />
@@ -25,4 +24,4 @@ export default function MyHomePage() {
       </body>
     </html>
   );
-}
+};
