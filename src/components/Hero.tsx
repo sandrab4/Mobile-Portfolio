@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 import Image from "next/image"
 
-const Home = () => {
+const Hero = () => {
   return (
-    <section id="home">
+    <section id="Hero">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left mt-5 md:mt-12">
         <div className="md:mt-2 md:w-1/2">
           <Image
@@ -39,4 +39,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

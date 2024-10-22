@@ -12,8 +12,8 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Home",
-    page: "home",
+    label: "Hero",
+    page: "Hero",
   },
   {
     label: "Skills",
@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className="flex flex-row justify-between items-center md:flex md:py-5">
         <div>
           <div className="flex justify-end">
-            <Link to="home">
+            <Link to="Hero">
               <div className="container flex items-center"></div>
             </Link>
             <div className="md:hidden">
